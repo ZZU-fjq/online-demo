@@ -14,7 +14,7 @@ body {
 	color: white;
 	text-align: center;
 	padding: 1rem;
-
+	letter-spacing:0.3rem;
 }
 
 
@@ -23,7 +23,8 @@ body {
 	text-align: center;
 	color: white;
 	border: 1px solid rgba(25, 186, 139, 0.17);
-
+	padding: 0.8rem;
+	letter-spacing: 0.3rem;
 }
 
 
@@ -54,6 +55,7 @@ table {
 th, td{
 	border: 1px solid rgba(25, 186, 139, 0.17);
 	text-align: center;
+	padding: 0.5rem;
 }
 
 .t_table thead tr {
