@@ -43,6 +43,9 @@ body {
 .cur_nums{
 	white-space:nowrap;
 }
+.position{
+	white-space:nowrap;
+}
 
 table {
 	
