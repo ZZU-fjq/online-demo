@@ -17,7 +17,11 @@ body {
 	letter-spacing:0.3rem;
 }
 
-
+.mainbox{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	
+}
 
 .t_title {
 	text-align: center;
