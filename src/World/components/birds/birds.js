@@ -7,14 +7,8 @@ import { Box3, AnimationMixer } from 'three';
 async function loadBirds() {
   const loader = new GLTFLoader();
 
-  // const [parrotData, flamingoData, storkData] = await Promise.all([
-  //   loader.loadAsync('/assets/models/jyqbj_low.glb'),
-  //   loader.loadAsync('/assets/models/Flamingo.glb'),
-  //   loader.loadAsync('/assets/models/Stork.glb'),
-  // ]);
-
   const [parrotData] = await Promise.all([
-    loader.loadAsync('/assets/models/yutian.glb'),
+    loader.loadAsync('/assets/yutian.glb'),
 
   ]);
 
@@ -33,12 +27,6 @@ async function loadBirds() {
   let x1 = box.min.x + mdlen / 2; // 模型中心点坐标X
   let y1 = box.min.y + mdhei / 2; // 模型中心点坐标Y
   let z1 = box.min.z + mdwid / 2; // 模型中心点坐标Z
-
-
-
-  // console.log('1', x1, y1, z1);
-  // console.log('2', x2, y2, z2);
-  // parrot.position.set(-x1, -y1, -z1); // 将模型进行偏移
 
   parrot.position.set(-x1, -y1, -z1); // 将模型进行偏移
 
