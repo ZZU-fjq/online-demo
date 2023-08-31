@@ -4,14 +4,31 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport"
-		content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes">
+		content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
 	<title> 溢洪道翻板闸门在线监测系统</title>
-	<link rel="stylesheet" href="index.css" />
+	<link rel="stylesheet" href="styles/index.css" />
+
+	<script type="importmap">
+	    {
+			"imports": {
+				"three": "./vendor/three/build/three.module.js",
+				"three/addons/": "./vendor/three/examples/jsm/"
+				
+			}
+		}
+	</script>
+
+
+	<script type="module" src="./src/main.js"></script>
 </head>
 
 <body>
 
 	<h2 class="titles">溢洪道翻板闸门在线监测</h2>
+
+	<div id="scene-container">
+		<!-- Our <canvas> will be inserted here -->
+	</div>
 
 	<section class="mainbox">
 		<div class="column">
@@ -275,7 +292,7 @@
 								<td></td>
 								<td>4000</td>
 								<td>1010</td>
-								<!-- <td>111</td> -->
+								<td>111</td>
 							</tr> -->
 
 
@@ -286,9 +303,10 @@
 		</div>
 	</section>
 
+
 	<footer class="logo">
 		<div class="logo_i">
-			<img src="logo.png" alt="logo" />
+			<img src="imgs/logo.png" alt="logo" />
 			<span class="logo_t">水利部水工金属结构质量检验测试中心</span>
 		</div>
 	</footer>
